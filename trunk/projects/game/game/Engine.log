@@ -1,0 +1,62 @@
+-------------------------------------------------------
+Zak Engine v1.5.0
+-------------------------------------------------------
+
+Chequeando procesador
+-------------------------------------------------------
+Procesador: GenuineIntel 
+Extended Features Soportado
+MMX Soportado
+SSE Soportado
+SSE2 Soportado
+El sistema operativo soporta las instrucciones SSE
+
+Chequeo de Adaptadores de Video
+-------------------------------------------------------
+Cantidad de Adaptadores: 1
+Adaptador 0 Controlador: nv4_disp.dll
+Adaptador 0 Desc. Controlador: NVIDIA GeForce FX 5200
+Adaptador 0 Versión del Controlador: 664731
+
+Chequeo del Soporte de Formato de Pixel
+-------------------------------------------------------
+Formato D3DFMT_X8R8G8B8 HAL FS: Soportado
+Formato D3DFMT_X8R8G8B8 HAL WND: Soportado
+Formato D3DFMT_X1R5G5B5 HAL FS: No soportado
+Formato D3DFMT_X1R5G5B5 HAL WND: No soportado
+Formato D3DFMT_X4R4G4B4 HAL FS: No soportado
+Formato D3DFMT_X4R4G4B4 HAL WND: No soportado
+Formato D3DFMT_R8G8B8 HAL FS: No soportado
+Formato D3DFMT_R8G8B8 HAL WND: No soportado
+Formato D3DFMT_R5G6B5 HAL FS: Soportado
+Formato D3DFMT_R5G6B5 HAL WND: Soportado
+Formato D3DFMT_X8R8G8B8 REF FS: Soportado
+Formato D3DFMT_X8R8G8B8 REF WND: Soportado
+Formato D3DFMT_X1R5G5B5 REF FS: No soportado
+Formato D3DFMT_X1R5G5B5 REF WND: No soportado
+Formato D3DFMT_X4R4G4B4 REF FS: No soportado
+Formato D3DFMT_X4R4G4B4 REF WND: No soportado
+Formato D3DFMT_R8G8B8 REF FS: No soportado
+Formato D3DFMT_R8G8B8 REF WND: No soportado
+Formato D3DFMT_R5G6B5 REF FS: Soportado
+Formato D3DFMT_R5G6B5 REF WND: Soportado
+
+Inicializando sistema gráfico
+-------------------------------------------------------
+Modo Pantalla Completa
+Ancho de Pantalla: 800
+Alto de Pantalla: 600
+Bits por píxel: 32
+Sincronización de barrido vertical: 0
+Refresco Vertical (hz): 60
+Procesamiento de Vértices: Hardware
+Sistema gráfico inicializado
+
+Inicializando dispositivos de entrada
+-------------------------------------------------------
+Dispositivo: Mouse - Número: 1864182624 
+Dispositivo: Teclado - Número: 1864182625 
+
+
+Inicializando el juego
+-------------------------------------------------------

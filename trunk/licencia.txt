@@ -1,0 +1,25 @@
+LICENCIA ZAK ENGINE
+-------------------------
+
+Por medio de la presente licencia, Juan Pablo Bettini le otorga a usted, 
+el desarrollador, el derecho a utilizar el kit de desarrollo y la librería 
+"Zak Engine" libre de cargo para la creación de software siempre y cuando 
+se cumpla con todos los requisitos que este documento establece.
+
+VISUALIZACIÓN DEL LOGOTIPO DE ZAK ENGINE
+
+La aplicación (ej: videojuego) que utilice el "Zak Engine" deberá 
+visualizar como primer imagen, el logotipo del "Zak Engine" durante un 
+período no menor a cuatro segundos.
+
+El logotipo se encuentra incluido y deberá ser visualizado sin modificación 
+alguna de forma, color o tamaño.
+
+SIN GARANTÍAS
+
+El software es provisto "como está", sin garantía alguna de ningún tipo, 
+bien expresa o implícita, con inclusión, pero sin limitación a las garantías 
+mercantiles implícitas o a la conveniencia para un propósito particular. 
+Cualquier riesgo referente a la calidad y prestaciones del programa es 
+asumido por usted. Si se probase que el Programa es defectuoso, asume el 
+coste de cualquier servicio, reparación o corrección.

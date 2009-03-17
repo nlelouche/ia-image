@@ -1,0 +1,251 @@
+v1.5.0
+- Bug fixed in Console class
+- Vertex buffers performance improved
+- AngelScript engine removed
+- IsColliding method improved. Now it detects collisions between boxes, boxes vs. círculos, rotated boxes and rotated boxes vs. circles. 
+- Added colliding detection methods to MathUtil class
+- Bug fixed in ParticleSystem class
+- ConfigFile class redone and now it supports hex numbers
+
+v1.4.0
+- Complete engine restructuring to avoid dependencies problems
+- Bug fixed in ZakSound class
+- Bug fixed in Message class
+- Bug fixed in ParticleSystem class
+
+v1.3.2
+- Optimized transformation methods in Renderer class
+- Bug fixed in ScriptMgr class
+- Bug fixed when aquiring input in Game class
+- Added ATan2 method in MathUtil class
+- Optimized Draw method in Sprite and IsoTile classes
+- Added Pow method in MathUtil class
+- Bug fixed in registration of DrawString method in Renderer class
+- Bug fixed in AddRef and Release methods
+- Added ScriptFileStream class for input/output of files
+- Registered ScriptFileStream in script engine
+- Updated AngelScript to version 2.10.0 WIP
+- Bug fixed in preprocessing of #include in ScriptMgr class
+
+v1.3.1
+- Bug fixed in stop method in Sound class
+- Added the possibility of acquiring key events from system
+- Bug fixed in ScriptMgr class
+- Updated AngelScript library to version 2.9.1
+- Added GetRadius method to Shape class
+- Bug fixed in SoundMgr class
+
+v1.3.0
+- Reimplemented the classes SoundMgr and Sound in a new DLL called ZakSound
+- Reorganized the code in the solution
+- Reorganized the widgets code 
+- Added MouseRelease macro in Input class
+
+v1.2.0
+- Engine recompiled using irrKlang 0.9.1
+- Engine recompiled using AngelScript 2.8.1
+- Bug fixed in ScriptMgr class
+- Bug fixed in SaveScreenshot method of Window class
+- Bug fixed in Sound class
+- Bug fixed in MathUtil class
+- Message class modified to support user messages
+- Added getMessage and getUserMessage of Message class in the scripting engine
+- Added the possibility of invoking Garbage Collector from the script
+- Added ParticleSystem class to the script engine
+- Added isometric maps and sprites
+- Added SetDivisor and GetDivisor methods in FPSMeter class
+
+v1.1.0 
+- Sound module redone using irrKlang library
+- 90% of the engine classes and its arrays are registered in the scripting engine
+- Added the possibility of loading and saving scripts in binary
+- The window appears in the center of the desktop
+- Bug fixed IsAnimationRunning method in Sprite class
+- Bug fixed in MouseAbsPos
+- Added bounding-box vs. bounding-circle collision between entities
+- Updated AngelScript library to version 2.8.1 WIP 05/26/2007
+- Added the possibility of drawing circles in Shape class
+
+v1.0.1 Stable
+- Added SetMinFilter and SetMagFilter methods to Renderer class
+- Added MinFilter and MagFilter variables to the Sprite and Font definition files
+
+v1.0 Stable
+- Bug fixed in ToggleMouseExclusive method in Input class
+- Bug fixed in Entity2D class
+- Added Tan, ATan, ASin, ACos and Round methods to MathUtil class
+- Added the possibility of changing the pivot of particles emitter
+
+v1.0.0.0 RC 6 Patch
+- Bug fixed in MouseRelPos added in RC6
+
+v1.0.0.0 RC 6
+- Bug fixed in MouseWorldPos 
+- Bug fixed in MouseRelPos
+
+v1.0.0.0 RC 5
+- Textures UV coords. calculation fixed
+- Added the possibility of using #include in scripts
+- Some minor changes in Entity2D class
+- Added RadToDegree and DegreeToRad to script engine
+- Implemented scalar classes methods and properties registration in the script engine
+- Recompiled AngelScript library to avoid disc logging
+- Added TextureFilter and TextureMipFilter variables to sprites definition files so we can select the different texture filters
+- Bug fixed in Input class (mouse world position)
+
+v1.0.0.0 RC 4 Patch
+- Textures UV calculation of sprites and maps fixed
+
+v1.0.0.0 RC 4
+- Bug fixed in Game class that if we don't pass the configuration, it crashes
+- Bug fixed in TextureManager class when removing textures
+- Bug fixed in Input class that inverts mouse position vertically in MouseWorldPos
+- Bug fixed in WdgConsole class
+
+v1.0.0.0 RC 3
+- Added the automatic drawing of the collision area if the flag CollisionVisible is true
+- Added the drawing of the bounding circle 
+- Added the possibility of loading sounds by type (music or sound) so user can modify volume by type
+- Sprite class modified so it can be used as a Shape
+- Upgraded AngelScript library to version 2.8.0a
+- Added in-game console system
+- Bugs fixed in methods SetAngleZ and GetAngleZ
+- Rotations optimized
+- Entity2D class methods registered in script engine
+- D3D device reset bug fixed (Thanks Jonee)
+- TextureManager class modified to use a texture vector
+- EntityList class erased
+- Added GameConfig class that allows if we want to load and save the engine configuration from/to .ini file
+- SoundMgr and Soung bug fixed
+- Added OnLostDevice virtual method in Game class that will be invoked when the D3D device is lost
+
+v1.0.0.0 RC 2
+- Added loading, showing and using of .AMF map format (AnaConda Map Editor) to the Map class
+- Added the possibility of unloading textures from video and RAM memory through Unload method
+- Bug fixed in SetToPreviousPos method of class Entity2D (Thanks NEXUS)
+
+v1.0.0.0 RC 1
+- Bug fixed in Input class where the mouse relative position in non-exclusive mode doesn't coincide with the absolute position
+- Bug fixed in Entity2D class in FlipVertical method that sometimes doesn't invert
+- Added two new variables in sprite definition file: OffsetX and OffsetY that allows user to decide the offset in the texture
+- Added CollisionRadius variable in sprite definition file that allows user to indicate it's collision raidus
+- Added GetAnimation method in Sprite class that returns a pointer to the current animation
+- Added the methods GetTileNumCount, GetWorldCoordsFromTile and GetColRowFromTile to the Map class
+- Window class modified so that the client area size coincide with the resolution given (Thanks to Santiago Isidro!)
+- Bug fixed that doesn't allow reacquiring the window focus with a mouse click
+- Added Set variable to the Font class that allows user to select the font set to show
+- Added getRepeat, getLength, getPosition, setPosition, setPan, getPan, reset and isPlaying methods to the Sound class
+- The engine and network libraries are now separated to avoid confusions about dependencies 
+
+v0.3.4.3
+- Now it shows the debug fonts in DirectX 8.1
+- IsEnabledSystem method added in ParticleSystem class that allows user to determine if the system is enabled or not
+
+v0.3.4.2
+- Added a static class MathUtil that allows retrieve sines, cosines and random numbers from a table through SinCos and Random methods
+- Entity2D and ParticleSystem classes optimized
+- Vertical synchronization in fullscreen bug fixed
+- Added a SetCursorFromFile in the Window class that allows loading a customized Windows cursor
+
+v0.3.4.1
+- Now the mouse is acquired in cooperative mode
+- Now the MouseAbsPos return the mouse position relative to the window 
+- Framework recompiled using 2.7.1b version of AngelScript
+- Now the engine is compiled for DirectX81 and DirectX9
+- Added the possibility of determining the animation speed of the sprites in FPS through SpeedFPS var
+- Added particle system
+- Added DegreeToRad, RadToDegree and PI constants
+- Now it is possible to change the pivot position of a sprite from it's configuration file
+
+v0.3.3.1
+- Loading of .map format exported by Anaconda Map Editor implemented
+- Multi-processor bug fixed in the FPSMeter class
+- setGlobalVolume method added to the SoundMgr class that allows user to change volume of all the opened sounds
+
+v0.3.2.5
+- DrawString method bug fixed that sometimes crashes the engine
+- SetTile modifies the tile visually but not logically bug fixed
+- GetWorldCoordsFromColRow method modified to return true if the column and row provided are in the map and false if outside
+
+v0.3.2.4
+- Implemented that if the files config.ini and msg.ini don't exist, the engine will create both without returning error
+
+v0.3.2.3
+- GetTileFromColRow method added to Map class to acquiring a tile from a specified col and row
+- Bug fixed in method GetWorldCoordsFromColRow of the Map class
+- Translation bug fixed in Entity2D class
+
+v0.3.2.2b
+- Added two methods to the Sound class that allows the user to acquire and set the sound volume
+
+v0.3.2.2
+- Map class bug fixed
+- Change Resolution on the fly implemented
+- List class bug fixed (Thanks to Juan Manuel Alvarez)
+- Added three methods for acquiring previous position of an entity (GetPreviousPosX, GetPreviousPosY and GetPreviousPos)
+- Added the posibility of forcing the engine initialization avoiding the config.ini options
+- Added GetLastMessage method in the Log class that allows to read the last written message in the log file
+
+v0.3.2.1
+- Map class bug fixed
+- Scripting system implemented and working (AngelScript)
+- Network system (UDP packets) implemented using ENet free library
+- List class reimplemented
+
+v0.3.1.11
+- Class message bug fixed
+- Network class implemented using Enet free library
+- Added Spacing property to the Font class that allow the user to set the spacing between letters
+- KeyEvent macro added to the class Input that allow checking for Up, Down and Pressed key events
+- KeyDown macro changed it's name to KeyPressed
+
+v0.3.1.10
+- Showing a specific frame using SetFrame method of class Sprite bug fixed
+- Font class implemented that draws Bitmap Fonts created with Bitmap Font Creator (thanks to Thom Wetzel, Jr)
+- Reading negative integers bug fixed in the ConfigFile class
+
+v0.3.1.9
+- Several optimizations
+- Apparently fixed the visualization bug in window and fullscreen modes (Thanks to Santiago Isidro)
+- Y axis inverted in mouse to coincide with the screen axis
+- Added X and Y pivot position
+
+v0.3.1.8
+- Horizontal and vertical flipping of entities implemented.
+- Updating and drawing of entities optimized.
+- Enumerating of devices in the input class implemented.
+- Acquiring of joysticks states implemented.
+
+v0.3.1.7
+- Change in Entity2d Draw method. Now it isn't necessary to pass the DT time by parameter.
+- Two new methods added to Entity2D that change the X and Y position separetly.
+- SetTile method added to the map class that allow the changing the content of a tile.
+- Load animations from a definition file implemented.
+- Access violation when shutting down the engine if the initialization failed.
+
+v0.3.1.6
+- Showing sprite collision area bug fixed.
+- Added options in sprite definition file for change the collision area.
+- Enum type name changed from ShapeTYPE to ShapeType in Shape.h.
+- Update in Shapes and Sprites changed.
+
+v0.3.1.5
+- Some bugs in loading sprite definition files fixed (Thanks to Alejandro Luna).
+- Showing a non-loaded sprite bug fixed.
+- Definition files parser bug fixed.
+- Log error message when cannot load a sprite file.
+- Scripting system using AngelScript implemented.
+
+v0.3.1.4
+- Texture load in non persistent mode implemented.
+- Texture reload after ALT+TAB bug fixed.
+- Some headers changes because of the problem with relative folders (Thanks to Gabriel Beranger).
+- Toggle sound on and off option added to the config.ini file.
+- Some sound bugs fixed.
+
+v0.3.1.3
+- SoundMgr and Sound classes implemented using Audiere library.
+- D3D Device reset and textures reload after ALT+TAB implemented.
+
+v0.3.0.0
+- First version of the 2d engine
